@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Navbar from "@/components/Navbar";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [id, setId] = useState<string>("home");
@@ -37,6 +38,7 @@ export default function Home() {
         <About />
         <Experience />
         <Skills />
+        <Contact />
       </div>
     </Fragment>
   );

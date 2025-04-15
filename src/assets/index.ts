@@ -488,11 +488,11 @@ export const navbarData: NavbarDataType[] = [
     //     name: 'Pricing',
     //     icon: PriceTag3LineIcon,
     // },
-    // {
-    //     id: 'contact',
-    //     name: 'Contact',
-    //     icon: ContactsBook2LineIcon,
-    // },
+    {
+        id: 'contact',
+        name: 'Contact',
+        icon: ContactsBook2LineIcon,
+    },
     // {
     //     id: 'questions',
     //     name: 'Questions',
