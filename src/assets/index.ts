@@ -473,31 +473,31 @@ export const navbarData: NavbarDataType[] = [
         name: 'Skills',
         icon: BriefcaseLineIcon,
     },
-    {
-        id: 'reviews',
-        name: 'Reviews',
-        icon: UserStarLineIcon,
-    },
-    {
-        id: 'projects',
-        name: 'Projects',
-        icon: ProjectorLineIcon,
-    },
-    {
-        id: 'pricing',
-        name: 'Pricing',
-        icon: PriceTag3LineIcon,
-    },
-    {
-        id: 'contact',
-        name: 'Contact',
-        icon: ContactsBook2LineIcon,
-    },
-    {
-        id: 'questions',
-        name: 'Questions',
-        icon: QuestionAnswerLineIcon,
-    },
+    // {
+    //     id: 'reviews',
+    //     name: 'Reviews',
+    //     icon: UserStarLineIcon,
+    // },
+    // {
+    //     id: 'projects',
+    //     name: 'Projects',
+    //     icon: ProjectorLineIcon,
+    // },
+    // {
+    //     id: 'pricing',
+    //     name: 'Pricing',
+    //     icon: PriceTag3LineIcon,
+    // },
+    // {
+    //     id: 'contact',
+    //     name: 'Contact',
+    //     icon: ContactsBook2LineIcon,
+    // },
+    // {
+    //     id: 'questions',
+    //     name: 'Questions',
+    //     icon: QuestionAnswerLineIcon,
+    // },
 ]
 
 // Toggle

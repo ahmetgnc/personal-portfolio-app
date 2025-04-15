@@ -7,7 +7,7 @@ import { aboutText, aboutData, DownloadIcon, ArrowLeftIcon } from "@/assets";
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen px-96 flex flex-col items-center justify-center">
+    <div id="about" className="min-h-screen px-96 flex flex-col items-center justify-center">
       <Heading title={"About Me"} />
       <div className="w-full flex item-center justify-between md:justify-center">
         <Image

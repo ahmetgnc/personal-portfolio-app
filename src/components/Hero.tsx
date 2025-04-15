@@ -55,6 +55,7 @@ const Hero: React.FC = () => {
 
   return (
     <div
+      id={"home"}
       className="h-screen grid place-items-center m-4"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
