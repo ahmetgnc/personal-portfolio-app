@@ -4,7 +4,11 @@ import { CopyRightIcon, navbarData } from "@/assets";
 import Link from "next/link";
 import React, { useMemo } from "react";
 
-const Navbar: React.FC = () => {
+type NavbarProps = {
+  id: string;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ id }) => {
   const currentYear = new Date().getFullYear();
   const copyRightRenderIcon = useMemo(() => <CopyRightIcon />, []);
 
@@ -23,8 +27,18 @@ const Navbar: React.FC = () => {
             href={`/#${item.id}`}
             className="group flex flex-col item-center gap-y-2"
           >
-            <item.icon className="text-2xl text-yellow-600 group-hover:scale-125 transition-all" />
-            <span className="text-[10px] tracking-wide -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 text-center">
+            <item.icon
+              className={`text-2xl group-hover:scale-125 xl:group-hover:scale-115 xs:group-hover:scale-100 transition-all ${
+                item.id === id
+                  ? "text-red-500 scale-110 xl:scale-100 xs:scale-80"
+                  : "text-yellow-600 scale-100 xl:scale-90 xs:scale-70"
+              }`}
+            />
+            <span
+              className={`text-[10px] tracking-wide opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 text-center ${
+                index % 2 === 0 ? "-translate-x-2" : "-translate-x-2"
+              } ${item.id === id && "-translate-x-0 opacity-100"}`}
+            >
               {item.name}
             </span>
           </Link>
