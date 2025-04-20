@@ -74,7 +74,7 @@ const Experience: React.FC = () => {
                 />
               </motion.div>
               <div
-                className={`w-14 absolute z-10 bg-white top-20 mx-60 border border-gray-300 rounded-full aspect-square place-items-center text-red-400 font-light -translate-y-1/2 hidden md:grid ${
+                className={`w-14 absolute z-10 bg-white top-20 mx-60 border border-gray-300 rounded-full aspect-square place-items-center text-orange-500 font-light -translate-y-1/2 hidden md:grid ${
                   index % 2 === 0
                     ? "left-full -translate-x-1/2 md:left-1/3 lg:left-1/2"
                     : "right-full translate-x-1/2 md:right-1/3 lg:right-1/2"

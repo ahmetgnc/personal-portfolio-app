@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ id }) => {
       fixed inset-y-0 left-0 w-[50px] md:w-[70px] flex flex-col items-center justify-between border-r border-gray-200 bg-white p-4 z-10"
     >
       <Link href="/#home">
-        <span className="text-3xl font-semibold text-red-400">A</span>.
+        <span className="text-3xl font-semibold text-orange-500">A</span>.
         <span className="block w-min rotate-90 origin-bottom text-[12px] font-semibold">
           Genc
         </span>
@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ id }) => {
             <item.icon
               className={`text-2xl group-hover:scale-125 xl:group-hover:scale-115 xs:group-hover:scale-100 transition-all ${
                 item.id === id
-                  ? "text-red-500 scale-110 xl:scale-100 xs:scale-80"
+                  ? "text-orange-500 scale-110 xl:scale-100 xs:scale-80"
                   : "text-yellow-600 scale-100 xl:scale-90 xs:scale-70"
               }`}
             />

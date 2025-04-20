@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               key={index}
-              className="hover:bg-red-400 hover:text-white transition-colors rounded-full p-2 sm:p-3"
+              className="hover:bg-orange-500 hover:text-white transition-colors rounded-full p-2 sm:p-3"
             >
               {<Icon className="w-5 h-5" />}
             </a>
