@@ -1,20 +1,30 @@
 // Hero
-import InstagramLineIcon from 'remixicon-react/InstagramLineIcon'
-import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon'
-import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon'
-import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon'
 import GithubLineIcon from 'remixicon-react/GithubLineIcon'
+import LinkedinBoxFillIcon from 'remixicon-react/LinkedinBoxFillIcon'
+import MediumFillIcon from 'remixicon-react/MediumFillIcon'
 import { FC, SVGProps } from 'react'
 import { RemixiconReactIconComponentType } from 'remixicon-react'
 
 export type IconType = FC<SVGProps<SVGSVGElement>>;
 
-export const heroIcons: RemixiconReactIconComponentType[] = [
-    InstagramLineIcon,
-    FacebookCircleLineIcon,
-    DribbbleLineIcon,
-    YoutubeLineIcon,
-    GithubLineIcon,
+export type HeroIconsDataType = {
+    icon: RemixiconReactIconComponentType;
+    url: number;
+}
+
+export const heroIcons: HeroIconsDataType[] = [
+    {
+        icon: LinkedinBoxFillIcon,
+        url: "https://www.linkedin.com/in/ahmetgnc/"
+    },
+    {
+        icon: GithubLineIcon,
+        url: "https://github.com/ahmetgnc"
+    },
+    {
+        icon: MediumFillIcon,
+        url: "https://medium.com/@ahmetxgenc"
+    }, 
 ]
 
 // About Me
@@ -58,8 +68,7 @@ export const DownloadIcon: RemixiconReactIconComponentType = DownloadLineIcon;
 export const ArrowLeftIcon: RemixiconReactIconComponentType = ArrowLeftSFillIcon;
 
 export const aboutText =
-    " Hi, I'm Ahmet, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience."
-// End of About Me
+    " Hi, I am a highly skilled React and React native developer with 4 years of experience in front-end development using React, JavaScript, and TypeScript. I excel in building smooth, responsive, and user-friendly interfaces for various devices, with a strong focus on performance optimization, accessibility, and scalability. My expertise includes UI/UX design, RESTful APIs, version control (Git), agile methodologies, debugging, and cross-platform development. I am passionate about learning and staying updated with the latest technologies. Additionally, I am a collaborative team player, delivering high-quality solutions to enhance UX and business growth through effective code reviews and problem-solving skills throughout the software development lifecycle."
 
 // Experience
 export const experienceData = [

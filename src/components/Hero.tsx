@@ -15,7 +15,6 @@ const Hero: React.FC = () => {
     innerHeight: 0,
   });
   const [mouseMove, setMouseMove] = useState<boolean>(false);
-  const [buttonHover, setButtonHover] = useState<boolean>(false);
 
   const motionX = useMotionValue(0);
   const motionY = useMotionValue(0);
@@ -78,30 +77,20 @@ const Hero: React.FC = () => {
               priority={true}
               className="h-auto w-[100px] sm:w-[200px]"
             />
-            <motion.span
-              className="absolute text-3xl font-semibold text-yellow-600"
-              initial={{ scale: 0 }}
-              animate={{
-                opacity: buttonHover ? 0 : 1,
-                scale: buttonHover ? 2 : 0,
-                y: buttonHover ? -40 : 0,
-              }}
-              transition={{ opacity: { delay: 0.4 } }}
-            >
-              Hi
-            </motion.span>
           </motion.div>
-          <h1 className="text-center sm:text-3xl font-bold tracking-wider text-gray-500 text-xl">
-            My Name is Ahmet Genc &
+          <h1 className="text-center sm:text-3xl font-bold tracking-wider text-gray-800 text-xl">
+            Hi! I&apos;m Ahmet Genc 👋
           </h1>
           <p className="text-lg tracking-wider text-gray-700">
-            I like animations 😊
+            I&apos;m an Experienced Frontend Developer
           </p>
         </div>
         <div className="mt-8 flex justify-center gap-x-5 sm:gap-x-10 sm:text-3xl text-yellow-600 text-lg">
-          {heroIcons.map((Icon, index) => (
+          {heroIcons.map(({ icon: Icon, url }, index) => (
             <a
-              href="#"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
               className="hover:bg-red-400 hover:text-white transition-colors rounded-full p-2 sm:p-3"
             >
@@ -109,14 +98,6 @@ const Hero: React.FC = () => {
             </a>
           ))}
         </div>
-        <a
-          href="#"
-          className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
-          onMouseEnter={() => setButtonHover(true)}
-          onMouseLeave={() => setButtonHover(false)}
-        >
-          Talk to me
-        </a>
       </div>
     </div>
   );
