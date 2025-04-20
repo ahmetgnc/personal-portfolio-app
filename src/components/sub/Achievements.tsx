@@ -32,10 +32,10 @@ const Achievements: React.FC<AchievementsProps> = ({
   };
   return (
     <div className="flex items-end gap-x-3">
-      <Icon className="text-4xl lg:text-2xl text-gray-300" />
+      <Icon className="text-2xl lg:text-4xl text-gray-300" />
       <h1 className="flex flex-col gap-y-2">
         <motion.span
-          className="text-2xl lg:text-xl font-light text-yellow-500"
+          className="text-xl lg:text-2xl font-light text-yellow-500"
           onViewportEnter={() => count(amount)}
           viewport={{ once: true }}
         >

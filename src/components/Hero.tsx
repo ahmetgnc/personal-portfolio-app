@@ -55,8 +55,7 @@ const Hero: React.FC = () => {
 
   return (
     <div
-      id={"home"}
-      className="h-screen grid place-items-center m-4"
+      className="h-screen grid place-items-center"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -77,7 +76,7 @@ const Hero: React.FC = () => {
               width={400}
               height={400}
               priority={true}
-              className="h-auto w-[150px]"
+              className="h-auto w-[100px] sm:w-[200px]"
             />
             <motion.span
               className="absolute text-3xl font-semibold text-yellow-600"
@@ -87,24 +86,24 @@ const Hero: React.FC = () => {
                 scale: buttonHover ? 2 : 0,
                 y: buttonHover ? -40 : 0,
               }}
-              transition={{opacity: { delay: 0.4 }}}
+              transition={{ opacity: { delay: 0.4 } }}
             >
               Hi
             </motion.span>
           </motion.div>
-          <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl">
+          <h1 className="text-center sm:text-3xl font-bold tracking-wider text-gray-500 text-xl">
             My Name is Ahmet Genc &
           </h1>
           <p className="text-lg tracking-wider text-gray-700">
             I like animations 😊
           </p>
         </div>
-        <div className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
+        <div className="mt-8 flex justify-center gap-x-5 sm:gap-x-10 sm:text-3xl text-yellow-600 text-lg">
           {heroIcons.map((Icon, index) => (
             <a
               href="#"
               key={index}
-              className="hover:bg-red-400 hover:text-white transition-colors rounded-full p-2"
+              className="hover:bg-red-400 hover:text-white transition-colors rounded-full p-2 sm:p-3"
             >
               {<Icon className="w-5 h-5" />}
             </a>
